@@ -1,0 +1,6 @@
+{
+  "name": "example-plugin",
+  "version": "0.1.0",
+  "description": "Minimal om-agent-os plugin example.",
+  "permissions": []
+}

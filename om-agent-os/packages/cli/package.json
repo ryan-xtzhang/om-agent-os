@@ -1,0 +1,21 @@
+{
+  "name": "@om-agent-os/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "om": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@om-agent-os/core": "workspace:*",
+    "@om-agent-os/provider-mock": "workspace:*",
+    "@om-agent-os/runtime": "workspace:*",
+    "@om-agent-os/tools": "workspace:*"
+  }
+}

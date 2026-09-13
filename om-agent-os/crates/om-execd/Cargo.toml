@@ -1,0 +1,13 @@
+[package]
+name = "om-execd"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+om-protocol = { path = "../om-protocol" }
+om-executor = { path = "../om-executor" }

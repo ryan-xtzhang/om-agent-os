@@ -1,0 +1,22 @@
+{
+  "name": "om-agent-os",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A pluggable agent harness with a TypeScript control plane and Rust execution runtime.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "clean": "pnpm -r --if-present clean",
+    "rust:build": "cargo build --workspace",
+    "rust:test": "cargo test --workspace",
+    "check": "pnpm typecheck && cargo check --workspace"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  }
+}
